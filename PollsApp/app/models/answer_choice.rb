@@ -7,7 +7,7 @@ class AnswerChoice < ActiveRecord::Base
     class_name: "Question"
 
   has_many :responses,
-    foreign_key: :answer_choices_id,
+    foreign_key: :answer_choice_id,
     primary_key: :id,
     class_name: "Response"
 end

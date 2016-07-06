@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  validates :username, null: false, uniqueness: true
+  validates :user_name, null: false, uniqueness: true
 
   has_many :authored_polls,
     foreign_key: :author_id,
